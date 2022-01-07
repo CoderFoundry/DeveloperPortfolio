@@ -1,0 +1,155 @@
+:root {
+    --title-font: 'Bebas Neue', sans-serif;
+    --subtitle-font: 'Fira Sans', sans-serif;
+    --bd-body-font: 'Roboto', sans-serif;
+    --bd-primary-color: #91CBFB;
+    --bd-secondary-color: #4294BA;
+    --bd-dark-color: #212121;
+    --bd-light-color: #f8f8f8;
+    --bd-font-size: 1.2rem;
+    --bd-font-weight: 400;
+    --bd-line-height: 1.5;
+}
+
+
+/*------ELEMENT OVER RIDES ----- */
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--title-font);
+}
+
+body {
+    font-family: var(--bd-body-font);
+    font-size: var(--bd-font-size);
+    font-weight: var(--bd-font-weight);
+    line-height: var(--bd-line-height);
+    color: var(--bd-dark-color);
+    background-color: var(--bd-light-color);
+    --webkit-text-size-adjust: 100%;
+}
+
+
+/* Breakpoints
+2560x500
+1200x400
+992x300
+767X200
+576x200
+375x150
+*/
+
+/* styling the main title */
+.mainTitle {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+/* sizing the logo for the header */
+.mainLogo {
+    height: .5rem;
+}
+
+/* subititle styling */
+.subTitle {
+    font-family: var(--subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 100;
+    letter-spacing: .09rem;
+}
+
+.mainHeader {
+    padding-top: calc(2em + 74px);
+    background-image: url(/img/blue_banner_576.jpg);
+    height: 274px;
+    background-repeat: no-repeat;
+    background-position: left 0px top 74px;
+}
+
+/*---------MEDIA QUERIES -----------*/
+
+/* small devices (landscape phones 576px and up) */
+@media (min-width: 575.98px) {
+
+    .mainHeader {
+        background-image: url(/img/blue_banner_768.jpg);
+        height: 274px;
+    }
+
+}
+
+@media (min-width: 767.98px) {
+    .mainHeader {
+        background-image: url(/img/blue_banner_992.jpg);
+        height: 374px;
+    }
+
+    /* styling the main title */
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+
+    /* sizing the logo for the header */
+    .mainLogo {
+        height: .6em;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        line-height: 1rem;
+        font-weight: 100;
+        letter-spacing: .1rem;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .mainHeader {
+        background-image: url(/img/blue_banner_1200.jpg);
+        height: 474px;
+    }
+}
+
+@media(min-width:1199.98px) {
+    .mainHeader {
+        background-image: url(/img/blue_banner_2560.jpg);
+        height: 574px;
+    }
+
+    /* styling the main title */
+    .mainTitle {
+
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+
+    /* sizing the logo for the header */
+    .mainLogo {
+        height: .6em;
+    }
+
+    .subTitle {
+        font-size: 1.7rem;
+        line-height: 1rem;
+        font-weight: 100;
+        letter-spacing: .1rem;
+    }
+}
+
+@media(min-width:1399.98px) {
+    .mainHeader {
+        background-image: url(/img/blue_banner_2560.jpg);
+        height: 574px;
+    }
+}
