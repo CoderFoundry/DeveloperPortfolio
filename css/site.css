@@ -1,6 +1,7 @@
 :root {
     --title-font: 'Bebas Neue', sans-serif;
     --subtitle-font: 'Fira Sans', sans-serif;
+    --heading-font: 'Allan', sans-serif;
     --bd-body-font: 'Roboto', sans-serif;
     --bd-primary-color: #91CBFB;
     --bd-secondary-color: #4294BA;
@@ -9,6 +10,7 @@
     --bd-font-size: 1.2rem;
     --bd-font-weight: 400;
     --bd-line-height: 1.5;
+    --bd-title-color: #212121;
 }
 
 
@@ -26,6 +28,18 @@ h2,
 h1,
 .h1 {
     font-family: var(--title-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--bd-title-color);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.bd-card {
+    width: 18rem;
 }
 
 body {
@@ -38,6 +52,25 @@ body {
     --webkit-text-size-adjust: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1 0 auto;
+
+}
+
+footer {
+    margin-top: auto;
+}
+
 
 /* Breakpoints
 2560x500
@@ -48,25 +81,12 @@ body {
 375x150
 */
 
+/*-----Main Header Styles -----*/
 /* styling the main title */
 .mainTitle {
     font-family: var(--title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-}
-
-/* sizing the logo for the header */
-.mainLogo {
-    height: .5rem;
-}
-
-/* subititle styling */
-.subTitle {
-    font-family: var(--subtitle-font);
-    font-size: .6rem;
-    line-height: 1rem;
-    font-weight: 100;
-    letter-spacing: .09rem;
 }
 
 .mainHeader {
@@ -77,10 +97,66 @@ body {
     background-position: left 0px top 74px;
 }
 
-.section-page{
-    height:100%;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+/* sizing the logo for the header */
+.mainLogo {
+    height: 2.0rem;
+}
+
+/*----- subititle styling -----*/
+.subTitle {
+    font-family: var(--subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 100;
+    letter-spacing: .09rem;
+}
+
+/*-----Section Styles------*/
+.section-page {
+    padding-top: 5em;
+    padding-bottom: 6rem;   
+}
+
+.section-page:last-child {
+    min-height: calc(70vh);
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--bd-light-color);
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--bd-primary-color);
+}
+
+/*------project card styles------*/
+.projectCard {
+    width: 18rem;
+}
+
+.projectCard:hover>div.card-body {
+    display: none;
+}
+
+/*------footer styles-----*/
+.footer-bg-cta {
+    background: linear-gradient(to bottom, var(--bd-light-color), var(--bd-light-color) 50%, var(--bd-dark-color) 50%, var(--bd-dark-color) 100%);
+}
+
+.footer-cta {
+    border-radius: 10px;
+    background-color: var(--bd-secondary-color);
+    width: 75%;
+}
+
+
+.footer-main {
+    background-color: var(--bd-dark-color);
+    color: var(--bd-light-color);
+}
+
+.socialicons {
+    font-size: 2rem;
 }
 
 /*---------MEDIA QUERIES -----------*/
@@ -99,6 +175,10 @@ body {
     .mainHeader {
         background-image: url(/img/blue_banner_992.jpg);
         height: 374px;
+    }
+
+    .footer-cta {
+        width: 75%;
     }
 
     /* styling the main title */
