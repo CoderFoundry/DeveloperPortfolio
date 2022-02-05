@@ -1,6 +1,8 @@
 /* 
 Hover card images are 400px x 400px 
 Make all the hover cards the same size if using in a group
+for the defualt hc-card class set the widht and height to the 
+proper aspect ratio for best results
 */
 
 
@@ -97,7 +99,7 @@ Make all the hover cards the same size if using in a group
 }
 
 .hc-card .hc-content button:hover {
-    background: dodgerblue;
+    background: var(--cf-secondary-color);
     color: white;
 }
 

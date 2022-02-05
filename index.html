@@ -24,14 +24,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
     <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/hoverCard.css">
-    <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark pe-2" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top pe-2" id="mainNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/dw_signature_white.png" height="50">
@@ -75,7 +75,7 @@
                 <div class="mainTitle">DANE<span><img src="/img/dw_signature_black.png" class="mainLogo"></span></div>
                 <div class="mainTitle">WHITMAN</div>
                 <div class="subTitle">SOFTWARE DEVELOPER</div>
-                <a class="btn btn-primary mt-3" href="#contact" >CONTACT ME</a>
+                <a class="btn btn-outline-primary mt-3" href="#contact">CONTACT ME</a>
             </div>
         </div>
     </header>
@@ -91,7 +91,7 @@
                             <source srcset="/img/dane_profile.jpg" media="(min-width: 991.98px)" />
                             <source srcset="/img/dane_profile_768.jpg" media="(min-width: 575.98px)" />
                             <source srcset="/img/dane_profile_992.jpg" media="(min-width: 767.98px)" />
-                            <img src="img/dane_profile_576.jpg" class="rounded-3 border border-2 border-dark img-fluid">
+                            <img src="img/dane_profile_576.jpg" class="img-fluid profilePic">
                         </picture>
                     </div>
                     <div class="col-12 col-lg-8 mt-2 mt-lg-0">
@@ -138,7 +138,7 @@
         </section>
         <section class="section-page" id="skills">
             <div class="container">
-                <div class="row">
+                <div class="row p-2">
                     <div class="col-12">
                         <h1>WHAT I USE</h1>
                         <p>
@@ -150,43 +150,43 @@
                     </div>
                 </div>
                 <!--SKILL ICONS-->
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="/img/logos/CsharpLogo.png" class="my-2" alt="...">
+                <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-3 p-2">
+                    <div class="col">
+                        <i class="devicon-csharp-plain colored devicons"></i>
                         <p>I use C# on a daily basis to build websites and mobile
                             applications. You can see examples of my work implementing
                             C# in my projects sections</p>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <img src="/img/logos/ASPNETMVC.png" class="my-2" alt="...">
+                    <div class="col">
+                        <i class="devicon-dotnetcore-plain colored devicons"></i>
                         <p>I use proven design patterns and frameworks to build
-                            websites. ASP.net and MVC fits the bill for most projects.
+                            websites. ASP.net core Web and MVC fits the bill for most projects.
                             Visit my projects to see examples.</p>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <img src="/img/logos/FrontEndDev.png" class="my-2" alt="...">
-                        <p>I use proven design patterns and frameworks to build
-                            websites. ASP.net and MVC fits the bill for most projects.
-                            Visit my projects to see examples.</p>
+                    <div class="col">
+                        <i class="devicon-javascript-plain devicons"></i>
+                        <p class="card-text">Javascript is the language of the web. I use vanilla js and comfortable
+                            with many js frameworks. Check out my challenges section for some js projects.</p>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <img src="/img/logos/Xamarin.png" class="my-2" alt="...">
-                        <p class="card-text">I use proven design patterns and frameworks to build
-                            websites. ASP.net and MVC fits the bill for most projects.
-                            Visit my projects to see examples.</p>
+                    <div class="col">
+                        <i class="devicon-html5-plain colored devicons"></i><i
+                            class="devicon-css3-plain colored devicons"></i><i
+                            class="devicon-bootstrap-plain colored devicons"></i>
+                        <p>I use HTML, CSS and Bootstrap build to beautiful responisve websites. Bootstrap is my go to
+                            css framework. Many shy away from front end I embrace it.</p>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <img src="/img/logos/SQL.png" class="my-2" alt="...">
-                        <p class="card-text">I use proven design patterns and frameworks to build
-                            websites. ASP.net and MVC fits the bill for most projects.
-                            Visit my projects to see examples.</p>
+                    <div class="col">
+                        <i class="devicon-android-plain-wordmark colored devicons"></i><i
+                            class="devicon-apple-original colored devicons"></i>
+                        <p class="card-text">I use cross platform frameworks to create mobile applications. Flutter and
+                            Xamarin are my tools of choice.</p>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <img src="/img/logos/Bootstrap.png " class="my-2" alt="...">
-                        <p class="card-text">I use proven design patterns and frameworks to build
-                            websites. ASP.net and MVC fits the bill for most projects.
-                            Visit my projects to see examples.</p>
+                    <div class="col">
+                        <i class="devicon-postgresql-plain-wordmark colored devicons"></i>
+                        <p class="card-text">SQL is the languge of the database. My projects are built with database
+                            backends. I have used Postgres on all them. I can write SQL on any DB platform.</p>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -392,9 +392,16 @@
                 </div>
             </div>
         </section>
+        <section class="section-cta d-flex align-items-center justify-content-center " id="cta">
+            <a href="#projects" class="cta-arrow"><i class="bi bi-arrow-up-square-fill "></i></a><span class="px-3">Have
+                you seen my latest project?<br>Check out Insectcide a bug tracker!</span><a href="#projects"
+                class="cta-arrow"><i class="bi bi-arrow-up-square-fill"></i></a>
+        </section>
         <section class="section-page" id="blog">
-            <div class="container">
+            <div class="container p-4 p-md-2">
                 <h1>Stuff I Write About</h1>
+                <p>I try to write on my blog on a regular basis. I thiks it is important to share your knowlwedge with
+                    others.</p>
                 <article class="card mb-4 blog-article">
                     <div class="row g-0 blog-row">
                         <div class="col-md-4 blog-header">
@@ -409,11 +416,11 @@
                         <div class="col-md-8">
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                                    fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
-                                    doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
-                                    molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque
-                                    nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+                                <p class="card-text blog-body line-clamp">A wonderful serenity has taken possession of
+                                    my entire soul, like these sweet mornings of spring which I enjoy with my whole
+                                    heart. I am alone, and feel the charm of existence in this spot, which was created
+                                    for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the
+                                    exquisite sense of mere tranquil existence, that I neglect my talents.
                                 </p>
                                 <div class="text-start">
                                     <a href="#" class="btn btn-primary btn-sm">Read More</a>
@@ -437,9 +444,14 @@
                         <div class="col-md-8">
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h2 class="card-title">The Power of CSS</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                                    fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
-                                    doloribus eius!</p>
+                                <p class="card-text blog-body line-clamp">The copy warned the Little Blind Text, that
+                                    where it came from it would have been rewritten a thousand times and everything that
+                                    was left from its origin would be the word "and" and the Little Blind Text should
+                                    turn around and return to its own, safe country. But nothing the copy said could
+                                    convince her and so it didn’t take long until a few insidious Copy Writers ambushed
+                                    her, made her drunk with Longe and Parole and dragged her into their agency, where
+                                    they abused her for their projects again and again. And if she hasn’t been
+                                    rewritten, then they are still using her.</p>
                                 <div class="text-start">
                                     <a href="#" class="btn btn-primary btn-sm">Read More</a>
                                 </div>
@@ -462,9 +474,13 @@
                         <div class="col-md-8">
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h2 class="card-title">Storing Images in a DB</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                                    fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
-                                    doloribus eius!</p>
+                                <p class="card-text blog-body line-clamp">Even the all-powerful Pointing has no control
+                                    about the blind texts it is an almost unorthographic life One day however a small
+                                    line of blind text by the name of Lorem Ipsum decided to leave for the far World of
+                                    Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad
+                                    Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t
+                                    listen. She packed her seven versalia, put her initial into the belt and made
+                                    herself on the way.</p>
                                 <div class="text-start">
                                     <a href="#" class="btn btn-primary btn-sm">Read More</a>
                                 </div>
@@ -487,9 +503,13 @@
                         <div class="col-md-8 blog-body">
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h2 class="card-title">SPA vs MPA frameworks</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                                    fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
-                                    doloribus eius!</p>
+                                <p class="card-text blog-body line-clamp">One morning, when Gregor Samsa woke from
+                                    troubled dreams, he found himself transformed in his bed into a horrible vermin. He
+                                    lay on his armour-like back, and if he lifted his head a little he could see his
+                                    brown belly, slightly domed and divided by arches into stiff sections. The bedding
+                                    was hardly able to cover it and seemed ready to slide off any moment. His many legs,
+                                    pitifully thin compared with the size of the rest of him, waved about helplessly as
+                                    he looked.</p>
                                 <div class="text-start">
                                     <a href="#" class="btn btn-primary btn-sm">Read More</a>
                                 </div>
@@ -571,9 +591,10 @@
                             <img src="img/dw_signature_white.png" height="50">
                         </div>
                         <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
-                            <a href=""><i class="bi bi-linkedin p-2 socialicons"></i></a>
-                            <a href=""><i class="bi bi-twitter p-2 socialicons"></i></a>
-                            <a href=""><i class="bi bi-youtube p-2 socialicons"></i></a>
+                            <a href="#" class="socialicons"><i class="bi bi-linkedin p-2 "></i></a>
+                            <a href="#" class="socialicons"><i class="bi bi-twitter p-2"></i></a>
+                            <a href="#" class="socialicons"><i class="bi bi-youtube p-2"></i></a>
+                            <a href="#" class="socialicons"><i class="bi bi-instagram p-2"></i></a>
                         </div>
                     </div>
                 </div>
