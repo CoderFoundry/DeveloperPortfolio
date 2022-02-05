@@ -1,3 +1,10 @@
+/* 
+Hover card images are 400px x 400px 
+Make all the hover cards the same size if using in a group
+*/
+
+
+
 .hc-wrapper {
     display: flex;
     width: 90%;
