@@ -179,8 +179,7 @@ footer {
 /*-----Section Styles------*/
 .section-page {
     padding-top: 5em;
-    padding-bottom: 6rem;
-    padding-left: 1rem; 
+    padding-bottom: 6rem;  
 }
 
 .section-page:nth-child(even) {
