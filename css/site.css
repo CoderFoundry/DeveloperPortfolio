@@ -180,8 +180,7 @@ footer {
 .section-page {
     padding-top: 5em;
     padding-bottom: 6rem;
-    padding-left: 1rem;
-    ;
+    padding-left: 1rem; 
 }
 
 .section-page:nth-child(even) {
