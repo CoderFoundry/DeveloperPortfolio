@@ -1,11 +1,10 @@
-/* 
-Hover card images are 400px x 400px 
+/*--------------------- 
+Hover card images are 400px x 400px.  
 Make all the hover cards the same size if using in a group
-for the defualt hc-card class set the widht and height to the 
-proper aspect ratio for best results
-*/
-
-
+for the default hc-card class set the width and height to the 
+same aspect ratio at all break points for best results. 
+*Note: this was built with square cards in mind.
+---------------------*/
 
 .hc-wrapper {
     display: flex;
@@ -14,8 +13,8 @@ proper aspect ratio for best results
 }
 
 .hc-card {
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
     border-radius: 15px;
     padding: 1.5rem;
     background: white;
@@ -103,6 +102,12 @@ proper aspect ratio for best results
     color: white;
 }
 
+@media(min-width: 767.98px){
+    .hc-card {
+        width: 200px;
+        height: 200px;
+    }
+}
 
 @media(min-width:1199.98px) {
     .hc-card {

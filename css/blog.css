@@ -2,8 +2,10 @@
     border-radius: 15px;
     margin-top: 3rem;
     overflow: hidden;
+    width: 95%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
 
 .blog-image {
     /* top-left | top-right | bottom-right | bottom-left */
@@ -34,9 +36,6 @@
     font-family: var(--title-font);
     font-weight: bolder;
     color: rgba(255, 255, 255, 0.7);
-
-
-
 }
 
 .blog-day {
