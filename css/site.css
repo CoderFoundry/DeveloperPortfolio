@@ -7,6 +7,7 @@
     --cf-primary-color: rgb(145, 203, 251);
     --cf-secondary-color: rgb(66, 148, 186);
     --cf-highlight-color: rgb(250, 225, 120);
+    --cf-highlight-color2: rgba(250,225,120,.55);
     --cf-dark-color: rgb(33, 33, 33);
     --cf-light-color: rgb(222, 238, 251);
 
@@ -129,6 +130,20 @@ footer {
     color: var(--cf-light-color);
 }
 
+#mainNav button {
+    border-color: var(--cf-highlight-color);
+}
+
+.navbar-toggler{
+    color: var(--cf-highlight-color2);
+}
+.navbar-toggler-icon-cf{
+    color:var(--cf-highlight-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* --- Breakpoints and image sizes for header images
 2560x500
 1200x400
@@ -179,7 +194,7 @@ footer {
 /*-----Section Styles------*/
 .section-page {
     padding-top: 5em;
-    padding-bottom: 6rem;  
+    padding-bottom: 6rem;
 }
 
 .section-page:nth-child(even) {
