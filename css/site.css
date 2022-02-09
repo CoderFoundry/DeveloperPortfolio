@@ -6,11 +6,12 @@
 
     --cf-primary-color: rgb(145, 203, 251);
     --cf-secondary-color: rgb(66, 148, 186);
-    --cf-secondary-color2: rgb(66, 148, 186, .55);
     --cf-highlight-color: rgb(250, 225, 120);
-    --cf-highlight-color2: rgba(250, 225, 120, .55);
     --cf-dark-color: rgb(33, 33, 33);
     --cf-light-color: rgb(222, 238, 251);
+
+    --cf-nav-toggler-glow: rgba(250, 225, 120, .55);
+    --cf-nav-togger-color: var(--cf-highlight-color);
 
     --cf-formfocus-border-color: var(--cf-secondary-color);
     --cf-formfocus-shadow: var(--cf-primary-color);
@@ -34,7 +35,7 @@ body {
     font-weight: var(--cf-font-weight);
     line-height: var(--cf-line-height);
     color: var(--cf-dark-color);
-    background: var(--cf-light-color);    
+    background: var(--cf-light-color);
     --webkit-text-size-adjust: 100%;
     display: flex;
     flex-direction: column;
@@ -135,12 +136,13 @@ footer {
     border-color: var(--cf-highlight-color);
 }
 
+
 .navbar-toggler {
-    color: var(--cf-highlight-color2);
+    color: var(--cf-nav-toggler-glow);
 }
 
 .navbar-toggler-icon-cf {
-    color: var(--cf-highlight-color);
+    color: var(--cf-nav-togger-color);
     font-size: 1.5rem;
     display: inline-block;
     vertical-align: middle;
@@ -383,8 +385,11 @@ footer {
 }
 
 @media(min-width:1399.98px) {
-    .mainHeader {       
-        background-image: url(/img/blue_banner_2560.jpg);
+    .mainHeader {
+       
+        background-image: url(/img/desktop_banner_2560.png);
         height: 574px;
+        background-repeat: no-repeat;
+        background-position: right top 74px;
     }
 }
