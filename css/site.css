@@ -34,7 +34,7 @@ body {
     font-weight: var(--cf-font-weight);
     line-height: var(--cf-line-height);
     color: var(--cf-dark-color);
-    background: var(--cf-light-color);
+    background: var(--cf-light-color);    
     --webkit-text-size-adjust: 100%;
     display: flex;
     flex-direction: column;
@@ -383,7 +383,7 @@ footer {
 }
 
 @media(min-width:1399.98px) {
-    .mainHeader {
+    .mainHeader {       
         background-image: url(/img/blue_banner_2560.jpg);
         height: 574px;
     }
