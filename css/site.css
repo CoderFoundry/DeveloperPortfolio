@@ -162,11 +162,11 @@ footer {
 
 /*--- default style for the header image media queries set the image at breakpoints---*/
 .mainHeader {
-    padding-top: calc(2em + 74px);
-    background-image: url(/img/blue_banner_576.jpg);
-    height: 274px;
+    padding-top: calc(.2em + 74px);
+    background-image: url(/img/DevPortFolioBG_375.png);
+    height: 224px;
     background-repeat: no-repeat;
-    background-position: left 0px top 74px;
+    background-position: right top 74px;
     background-color: var(--cf-light-color);
 }
 
@@ -180,8 +180,9 @@ footer {
     font-family: var(--subtitle-font);
     font-size: .6rem;
     line-height: 1rem;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: .09rem;
+    color: var(--cf-dark-color);
 }
 
 .profilePic {
@@ -215,6 +216,7 @@ footer {
     min-height: calc(70vh);
     background-color: var(--cf-light-color);
 }
+
 /* set the styles for the cta sections*/
 .section-cta {
     background-color: var(--cf-dark-color);
@@ -298,7 +300,7 @@ footer {
 @media (min-width: 575.98px) {
 
     .mainHeader {
-        background-image: url(/img/blue_banner_768.jpg);
+        background-image: url(/img/DevPortFolioBG_768.png);
         height: 274px;
     }
 
@@ -306,7 +308,7 @@ footer {
 
 @media (min-width: 767.98px) {
     .mainHeader {
-        background-image: url(/img/blue_banner_992.jpg);
+        background-image: url(/img/DevPortFolioBG_992.png);
         height: 374px;
     }
 
@@ -328,7 +330,7 @@ footer {
     .subTitle {
         font-size: 1.2rem;
         line-height: 1rem;
-        font-weight: 100;
+        font-weight: 300;
         letter-spacing: .1rem;
     }
 
@@ -348,14 +350,14 @@ footer {
 
 @media (min-width: 991.98px) {
     .mainHeader {
-        background-image: url(/img/blue_banner_1200.jpg);
+        background-image: url(/img/DevPortFolioBG_1200.png);
         height: 474px;
     }
 }
 
 @media(min-width:1199.98px) {
     .mainHeader {
-        background-image: url(/img/blue_banner_2560.jpg);
+        background-image: url(/img/DevPortFolioBG_2560.png);
         height: 574px;
     }
 
@@ -374,7 +376,7 @@ footer {
     .subTitle {
         font-size: 1.7rem;
         line-height: 1rem;
-        font-weight: 100;
+        font-weight: 300;
         letter-spacing: .1rem;
     }
 
@@ -395,7 +397,7 @@ footer {
 @media(min-width:1399.98px) {
     .mainHeader {
 
-        background-image: url(/img/desktop_banner_2560.png);
+        background-image: url(/img/DevPortFolioBG_2560.png);
         height: 574px;
         background-repeat: no-repeat;
         background-position: right top 74px;
