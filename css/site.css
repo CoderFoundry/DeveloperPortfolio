@@ -9,13 +9,14 @@
     --cf-highlight-color: rgb(250, 225, 120);
     --cf-dark-color: rgb(33, 33, 33);
     --cf-light-color: rgb(222, 238, 251);
+    --cf-background-color: rgba(250, 250, 250, .8);
 
     --cf-nav-toggler-glow: rgba(250, 225, 120, .55);
     --cf-nav-togger-color: var(--cf-highlight-color);
 
     --cf-formfocus-border-color: var(--cf-secondary-color);
     --cf-formfocus-shadow: var(--cf-primary-color);
-    --cf-form-background-color: rgba(250, 250, 250, .8);
+    --cf-form-background-color: var(--cf-background-color);
 
     --cf-font-size: 1.2rem;
     --cf-font-weight: 400;
@@ -35,14 +36,14 @@ body {
     font-weight: var(--cf-font-weight);
     line-height: var(--cf-line-height);
     color: var(--cf-dark-color);
-    background: var(--cf-light-color);
+    background: var(--cf-background-color);
     --webkit-text-size-adjust: 100%;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
 
-/*------ELEMENT OVER RIDES ----- */
+/*------ELEMENT OVERRIDES ----- */
 h6,
 .h6,
 h5,
@@ -58,6 +59,7 @@ h1,
     font-family: var(--heading-font);
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: .1rem;
     color: var(--cf-title-color);
 }
 
@@ -148,14 +150,7 @@ footer {
     vertical-align: middle;
 }
 
-/* --- Breakpoints and image sizes for header images
-2560x500
-1200x400
-992x300
-767X200
-576x200
-375x150
-*/
+
 
 /*-----Main Header Styles -----*/
 /* styling the main title */
@@ -172,6 +167,7 @@ footer {
     height: 274px;
     background-repeat: no-repeat;
     background-position: left 0px top 74px;
+    background-color: var(--cf-light-color);
 }
 
 /* sizing the logo for the header */
@@ -179,7 +175,7 @@ footer {
     height: 2.0rem;
 }
 
-/*----- subititle styling -----*/
+/*----- sub title styling -----*/
 .subTitle {
     font-family: var(--subtitle-font);
     font-size: .6rem;
@@ -219,7 +215,7 @@ footer {
     min-height: calc(70vh);
     background-color: var(--cf-light-color);
 }
-
+/* set the styles for the cta sections*/
 .section-cta {
     background-color: var(--cf-dark-color);
     color: var(--cf-light-color);
@@ -249,7 +245,7 @@ footer {
 
 /*------footer styles-----*/
 .footer-bg-cta {
-    background: linear-gradient(to bottom, var(--cf-light-color), var(--cf-light-color) 50%, var(--cf-dark-color) 50%, var(--cf-dark-color) 100%);
+    background: linear-gradient(to bottom, var(--cf-background-color), var(--cf-background-color) 50%, var(--cf-dark-color) 50%, var(--cf-dark-color) 100%);
 }
 
 .footer-cta {
@@ -258,6 +254,10 @@ footer {
     width: 75%;
 }
 
+.footer-message {
+    color: var(--cf-dark-color);
+    letter-spacing: .1rem;
+}
 
 .footer-main {
     background-color: var(--cf-dark-color);
@@ -283,6 +283,14 @@ footer {
     font-size: 4rem;
 }
 
+/* --- Breakpoints and image sizes for header images
+2560x500
+1200x400
+992x300
+767X200
+576x200
+375x150
+*----/
 
 /*---------MEDIA QUERIES -----------*/
 
@@ -386,7 +394,7 @@ footer {
 
 @media(min-width:1399.98px) {
     .mainHeader {
-       
+
         background-image: url(/img/desktop_banner_2560.png);
         height: 574px;
         background-repeat: no-repeat;
