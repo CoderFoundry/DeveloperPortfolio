@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    
+
     font-family: var(--cf-body-font);
     font-size: var(--cf-font-size);
     font-weight: var(--cf-font-weight);
@@ -42,11 +42,11 @@ body {
     color: var(--cf-dark-color);
     background: var(--cf-background-color);
     --webkit-text-size-adjust: 100%;
-    
+
 }
 
 /*--- sticky footer and page layout --- */
-header{
+header {
     padding-top: 74px;
 }
 
@@ -61,7 +61,7 @@ footer {
 
 
 /*------ELEMENT OVERRIDES ----- */
-section{
+section {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -191,7 +191,7 @@ h1,
 }
 
 /*--- default style for the header image media queries set the image at breakpoints---*/
-.mainHeader {   
+.mainHeader {
     background-image: url(/img/DevPortFolioBG_576.png);
     height: 200px;
     background-repeat: no-repeat;
@@ -204,17 +204,17 @@ h1,
     background-repeat: no-repeat;
     min-height: 300px;
     max-height: 500PX;
-    width:100%;
+    width: 100%;
     background-position: top left;
     background-size: cover;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
-.mainHeader-cover>.mainHeader-content{
-    backdrop-filter: blur(0px) brightness(80%) hue-rotate(120deg);    
+.mainHeader-cover>.mainHeader-content {
+    backdrop-filter: blur(0px) brightness(80%) hue-rotate(120deg);
 }
 
-.mainHeader-wrapper{    
+.mainHeader-wrapper {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -231,8 +231,7 @@ h1,
 /*-----Section Styles------*/
 .section-page {
     padding-top: 5em;
-    padding-bottom: 6rem;
-   
+    padding-bottom: 5rem;
 }
 
 .section-page:nth-child(even) {
@@ -250,8 +249,7 @@ h1,
 
 /* set the height and color of the contact form*/
 .section-page:last-child {
-    min-height: calc(70vh);
-    background-color: var(--cf-light-color);
+   background-color: var(--cf-light-color);
 }
 
 /* set the styles for the cta sections*/
@@ -291,7 +289,7 @@ h1,
 .footer-cta {
     border-radius: 10px;
     background-color: var(--cf-secondary-color);
-    width: 75%;   
+    width: 75%;
 }
 
 .footer-message {
@@ -402,7 +400,7 @@ h1,
         background-image: url(/img/DevPortFolioBG_2560.png);
         height: 500px;
     }
-   
+
 
     /* styling the main title */
     .mainTitle {
@@ -424,7 +422,7 @@ h1,
     }
 
     .section-cta {
-        
+
         line-height: 2.7rem;
         font-size: 2.5rem;
         text-align: center;
