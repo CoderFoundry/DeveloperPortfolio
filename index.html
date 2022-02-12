@@ -71,520 +71,508 @@
     </nav>
 
     <!--Banner Image and Call To Action-->
-    <header class="mainHeader container-xxl" id="home">
-        <div class="container d-flex justify-content-start align-items-start align-items-sm-center h-100">
+    <header class="container-xxl g-0" id="home">
+        <section class="mainHeader-cover d-flex justify-content-start align-items-center h-100">
             <div>
                 <div class="mainTitle">DANE<span><img src="/img/dw_signature_black.png" class="mainLogo"></span></div>
                 <div class="mainTitle">WHITMAN</div>
                 <div class="subTitle">SOFTWARE DEVELOPER</div>
                 <a class="btn btn-primary mt-3" href="#contact">CONTACT ME</a>
             </div>
-        </div>
+        </section>
     </header>
 
     <!--main content area-->
-    <main class="container-fluid p-0">
-        <section class="section-page container-xxl" id="about">
-            <div class="container">
-                <h1>About Me</h1>
-                <div class="row">
-                    <div class="col-12 col-lg-4">
+    <main class="container-xxl g-0">
+        <section class="section-page" id="about">
+            <h1>About Me</h1>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <picture>
+                        <source srcset="/img/dane_profile.jpg" media="(min-width: 991.98px)" />
+                        <source srcset="/img/dane_profile_768.jpg" media="(min-width: 575.98px)" />
+                        <source srcset="/img/dane_profile_992.jpg" media="(min-width: 767.98px)" />
+                        <img src="img/dane_profile_576.jpg" class="img-fluid profilePic">
+                    </picture>
+                </div>
+                <div class="col-12 col-lg-8 mt-2 mt-lg-0">
+                    <h2>I'm Dane Whitman, a full-stack web developer</h2>
+                    <p>
+                        I am a software developer based in the United States. I have been building applications
+                        and websites for years. I have been successful in bringing a company's idea to life. I
+                        mainly
+                        use C# and .NET to build
+                        web applications. I help take an idea and turn it into meaningful and useful software
+                        products. The ability transform requirements into useful software helps me prioritize tasks,
+                        iterate
+                        fast and deliver. Take a look at my portfolio work and let's see if we can work together on
+                        your next project.
+                    </p>
+                    <address>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <span>Name:</span>
+                                <span>Dane Whitman</span>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <span>Email:</span>
+                                <span>
+                                    <a class="linkstyle" href="mailto:dane@example.com">Dane@example.com</a>
+                                </span>
+                            </div>
+                            <div class="col-12">
+                                <span>From:</span>
+                                <span>North Carolina, US</span>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <a href="#" class="btn btn-xl btn-primary">Download Resume</a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </section>
+        <section class="section-page" id="skills">
+            <div class="row p-2">
+                <div class="col-12">
+                    <h1>WHAT I USE</h1>
+                    <p>
+                        I am a creative problem solver. I build full-stack web and
+                        mobile applications. I use C#, SQL, ASP.NET, Javascript,
+                        Xamarin, Bootstrap, HTML and CSS. I have highlighted my key
+                        technical skills that I will bring to your project.
+                    </p>
+                </div>
+            </div>
+            <!--SKILL ICONS-->
+            <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-3 p-2">
+                <div class="col">
+                    <i class="devicon-csharp-plain colored devicons"></i>
+                    <p>I use C# on a daily basis to build websites and mobile
+                        applications. You can see examples of my work implementing
+                        C# in my projects sections</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-dotnetcore-plain colored devicons"></i>
+                    <p>I use proven design patterns and frameworks to build
+                        websites. ASP.NET Core Web and MVC fits the bill for most projects.
+                        Visit my projects to see examples.</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-javascript-plain devicons"></i>
+                    <p class="card-text">Javascript is the language of the web. I use vanilla js and I am
+                        comfortable with many js frameworks. Check out my challenges section for some js projects.
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-html5-plain colored devicons"></i><i
+                        class="devicon-css3-plain colored devicons"></i><i
+                        class="devicon-bootstrap-plain colored devicons"></i>
+                    <p>I use HTML, CSS and Bootstrap build to beautiful responsive websites. Bootstrap is my go to
+                        CSS framework. Many shy away from front-end I embrace it.</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-android-plain-wordmark colored devicons"></i><i
+                        class="devicon-apple-original colored devicons"></i>
+                    <p class="card-text">I use cross platform frameworks to create mobile applications. Flutter and
+                        Xamarin are my tools of choice.</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-postgresql-plain-wordmark colored devicons"></i>
+                    <p class="card-text">SQL is the language of the database. My projects all utilize a database. I
+                        have used Postgres on all them. I can write SQL on any DB platform.</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="section-page" id="projects">
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h1>Things I Have Built</h1>
+                    <p>
+                        Showcasing complete functional projects demonstrates what I
+                        can bring to your project. I built these projects from the
+                        ground up to demonstrate skill with front-end, back-end, security
+                        and database development. All these projects are full-stack
+                        web projects that are published so that you can demo them
+                        easily. Contact me to get a complete code walk through.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 gy-5 ">
+                <!--Bug tracker card-->
+                <div class="col d-flex justify-content-center justify-content-md-start">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/bugtracker_600.jpg" media="(min-width: 991.98px)" />
+                                <img src="img/logos/bugtracker_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    A Full Stack bug tracker app built with ASP.NET MVC, C#
+                                    and SQL.
+                                </p>
+                                <button type="button" class="btn bnt-primary" data-bs-toggle="modal"
+                                    data-bs-target="#ProjectOneModal">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--expense tracker card-->
+                <div class="col d-flex justify-content-center">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/ExpenseTracker_600.jpg" media="(min-width: 991.98px)" />
+                                <img src="img/logos/ExpenseTracker_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    A Full Stack budgeting app built with ASP.NET MVC, C#
+                                    and SQL.
+                                </p>
+                                <button type="button" class="btn bnt-primary" data-bs-toggle="modal"
+                                    data-bs-target="#ProjectTwoModal">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Blog card-->
+                <div class="col d-flex justify-content-center justify-content-md-end">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/blog_600.jpg" media="(min-width: 991.98px)" />
+                                <img src="img/logos/blog_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    A Full Stack blogging platform built with ASP.NET MVC, C#
+                                    and SQL.
+                                </p>
+                                <button type="button" class="btn bnt-primary" data-bs-toggle="modal"
+                                    data-bs-target="#ProjectThreeModal">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-page" id="coding">
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h1>Smaller Things I Have Built</h1>
+                    <p>
+                        Coding Challenges are smaller in scope and scale than my full-stack projects. These problems
+                        are
+                        fun to solve and also showcase some UI skills and front-end dev skills with javascript. All
+                        the
+                        projects are published so you can easily see my work in action. Contact me if you would like
+                        to discuss any of my work.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 gy-5">
+                <!--Loan Calculator card-->
+                <div class="col d-flex justify-content-center justify-content-md-start">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/LoanShark_600.png" media="(min-width: 991.98px)" />
+                                <img src="img/logos/LoanShark_200.png">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    Loan payment calculator. Displays a full amortization schedule for simple
+                                    interest loans.
+                                </p>
+                                <a type="button" class="btn btn-primary" target="_blank"
+                                    href="https://superdogevents.coderfoundry.com">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--taco cat card-->
+                <div class="col d-flex justify-content-center">
+                    <div class="hc-card">
                         <picture>
-                            <source srcset="/img/dane_profile.jpg" media="(min-width: 991.98px)" />
-                            <source srcset="/img/dane_profile_768.jpg" media="(min-width: 575.98px)" />
-                            <source srcset="/img/dane_profile_992.jpg" media="(min-width: 767.98px)" />
-                            <img src="img/dane_profile_576.jpg" class="img-fluid profilePic">
+                            <source srcset="/img/logos/tacocat_600.png" media="(min-width: 991.98px)" />
+                            <img src="img/logos/tacocat_200.png">
                         </picture>
-                    </div>
-                    <div class="col-12 col-lg-8 mt-2 mt-lg-0">
-                        <h2>I'm Dane Whitman, a fullstack web developer</h2>
-                        <p>
-                            I am a software developer based in the United States. I have been building applications
-                            and websites for years. I have been successful in bringing a company's idea to life. I
-                            mainly
-                            use C# and .NET to build
-                            web applications. I help take an idea and turn it into meaningful and useful software
-                            products. The ability transform requirements into useful software helps me prioritize tasks,
-                            iterate
-                            fast and deliver. Take a look at my portfolio work and let's see if we can work together on
-                            your next project.
-                        </p>
-                        <address>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <span>Name:</span>
-                                    <span>Dane Whitman</span>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <span>Email:</span>
-                                    <span>
-                                        <a class="linkstyle" href="mailto:dane@example.com">Dane@example.com</a>
-                                    </span>
-                                </div>
-                                <div class="col-12">
-                                    <span>From:</span>
-                                    <span>North Carolina, US</span>
-                                </div>
-                                <div class="col-12 mt-3">
-                                    <a href="#" class="btn btn-xl btn-primary">Download Resume</a>
-                                </div>
-                            </div>
-                        </address>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-page container-xxl" id="skills">
-            <div class="container">
-                <div class="row p-2">
-                    <div class="col-12">
-                        <h1>WHAT I USE</h1>
-                        <p>
-                            I am a creative problem solver. I build fullstack web and
-                            mobile applications. I use C#, SQL, ASP.NET, Javascript,
-                            Xamarin, Bootstrap, HTML and CSS. I have highlighted my key
-                            technical skills that I will bring to your project.
-                        </p>
-                    </div>
-                </div>
-                <!--SKILL ICONS-->
-                <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-3 p-2">
-                    <div class="col">
-                        <i class="devicon-csharp-plain colored devicons"></i>
-                        <p>I use C# on a daily basis to build websites and mobile
-                            applications. You can see examples of my work implementing
-                            C# in my projects sections</p>
-                    </div>
-                    <div class="col">
-                        <i class="devicon-dotnetcore-plain colored devicons"></i>
-                        <p>I use proven design patterns and frameworks to build
-                            websites. ASP.NET Core Web and MVC fits the bill for most projects.
-                            Visit my projects to see examples.</p>
-                    </div>
-                    <div class="col">
-                        <i class="devicon-javascript-plain devicons"></i>
-                        <p class="card-text">Javascript is the language of the web. I use vanilla js and I am
-                            comfortable with many js frameworks. Check out my challenges section for some js projects.
-                        </p>
-                    </div>
-                    <div class="col">
-                        <i class="devicon-html5-plain colored devicons"></i><i
-                            class="devicon-css3-plain colored devicons"></i><i
-                            class="devicon-bootstrap-plain colored devicons"></i>
-                        <p>I use HTML, CSS and Bootstrap build to beautiful responisve websites. Bootstrap is my go to
-                            CSS framework. Many shy away from frontend I embrace it.</p>
-                    </div>
-                    <div class="col">
-                        <i class="devicon-android-plain-wordmark colored devicons"></i><i
-                            class="devicon-apple-original colored devicons"></i>
-                        <p class="card-text">I use cross platform frameworks to create mobile applications. Flutter and
-                            Xamarin are my tools of choice.</p>
-                    </div>
-                    <div class="col">
-                        <i class="devicon-postgresql-plain-wordmark colored devicons"></i>
-                        <p class="card-text">SQL is the languge of the database. My projects are built with database
-                            backends. I have used Postgres on all them. I can write SQL on any DB platform.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="section-page container-xxl" id="projects">
-            <div class="container">
-                <div class="row mb-2">
-                    <div class="col-12">
-                        <h1>Things I Have Built</h1>
-                        <p>
-                            Showcasing complete functional projects demonstrates what I
-                            can bring to your project. I built these projects from the
-                            ground up to demonstrate skill with frontend, backend, security
-                            and database development. All these projects are fullstack
-                            web projects that are published so that you can demo them
-                            easily. Contact me to get a complete code walkthrough.
-                        </p>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-3 gy-5 ">
-                    <!--Bug tracker card-->
-                    <div class="col d-flex justify-content-center justify-content-md-start">
-                        <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source srcset="/img/logos/bugtracker_600.jpg" media="(min-width: 991.98px)" />
-                                    <img src="img/logos/bugtracker_200.jpg">
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        A Full Stack bug tracker app built with ASP.NET MVC, C#
-                                        and SQL.
-                                    </p>
-                                    <button type="button" class="btn bnt-primary" data-bs-toggle="modal"
-                                        data-bs-target="#ProjectOneModal">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--expense tracker card-->
-                    <div class="col d-flex justify-content-center">
-                        <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source srcset="/img/logos/ExpenseTracker_600.jpg" media="(min-width: 991.98px)" />
-                                    <img src="img/logos/ExpenseTracker_200.jpg">
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        A Full Stack budgeting app built with ASP.NET MVC, C#
-                                        and SQL.
-                                    </p>
-                                    <button type="button" class="btn bnt-primary" data-bs-toggle="modal"
-                                        data-bs-target="#ProjectTwoModal">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog card-->
-                    <div class="col d-flex justify-content-center justify-content-md-end">
-                        <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source srcset="/img/logos/blog_600.jpg" media="(min-width: 991.98px)" />
-                                    <img src="img/logos/blog_200.jpg">
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        A Full Stack blogging platform built with ASP.NET MVC, C#
-                                        and SQL.
-                                    </p>
-                                    <button type="button" class="btn bnt-primary" data-bs-toggle="modal"
-                                        data-bs-target="#ProjectThreeModal">Learn More</button>
-                                </div>
-                            </div>
+                        <div class="hc-content">
+                            <p>
+                                Checks if a string is a palindrome. A classic interview question built as a app.
+                            </p>
+                            <a type="button" class="btn btn-primary" target="_blank"
+                                href="https://superdogevents.coderfoundry.com">Learn More</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section-page container-xxl" id="coding">
-            <div class="container">
-                <div class="row mb-2">
-                    <div class="col-12">
-                        <h1>Smaller Things I Have Built</h1>
-                        <p>
-                            Coding Challenges are smaller in scope and scale than my fullstack projects. These problems
-                            are
-                            fun to solve and also showcase some UI skills and frontend dev skills with javascript. All
-                            the
-                            projects are published so you can easily see my work in action. Contact me if you would like
-                            to discuss any of my work.
-                        </p>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-3 gy-5">
-                    <!--Loan Calculator card-->
-                    <div class="col d-flex justify-content-center justify-content-md-start">
-                        <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source srcset="/img/logos/LoanShark_600.png" media="(min-width: 991.98px)" />
-                                    <img src="img/logos/LoanShark_200.png">
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        Loan payment calculator. Displays a full amortization schedule for simple
-                                        interest loans.
-                                    </p>
-                                    <a type="button" class="btn btn-primary" target="_blank"
-                                        href="https://superdogevents.coderfoundry.com">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--taco cat card-->
-                    <div class="col d-flex justify-content-center">
+                <!--Tasker card-->
+                <div class="col d-flex justify-content-center justify-content-md-end">
+                    <div class="hc-wrapper">
                         <div class="hc-card">
                             <picture>
-                                <source srcset="/img/logos/tacocat_600.png" media="(min-width: 991.98px)" />
-                                <img src="img/logos/tacocat_200.png">
+                                <source srcset="/img/logos/Tasker_600.png" media="(min-width: 991.98px)" />
+                                <img src="img/logos/Tasker_200.png">
                             </picture>
                             <div class="hc-content">
                                 <p>
-                                    Checks if a string is a palidrome. A classic interview question built as a app.
+                                    Builds a to do list. Takser has some features not seen in most to do list apps.
                                 </p>
                                 <a type="button" class="btn btn-primary" target="_blank"
                                     href="https://superdogevents.coderfoundry.com">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <!--Tasker card-->
-                    <div class="col d-flex justify-content-center justify-content-md-end">
-                        <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source srcset="/img/logos/Tasker_600.png" media="(min-width: 991.98px)" />
-                                    <img src="img/logos/Tasker_200.png">
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        Builds a to do list. Takser has some features not seen in most to do list apps.
-                                    </p>
-                                    <a type="button" class="btn btn-primary" target="_blank"
-                                        href="https://superdogevents.coderfoundry.com">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                    <!--super dog card-->
-                    <div class="col d-flex justify-content-center justify-content-md-start">
-                        <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source srcset="/img/logos/superdog_600.jpg" media="(min-width: 991.98px)" />
-                                    <img src="img/logos/superdog_200.jpg">
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        Superdog displays event data and stats. Makes great use of local
-                                        storage.
-                                    </p>
-                                    <a type="button" class="btn btn-primary" target="_blank"
-                                        href="https://superdogevents.coderfoundry.com">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Fizz Buzz card-->
-                    <div class="col d-flex justify-content-center">
+                <!--super dog card-->
+                <div class="col d-flex justify-content-center justify-content-md-start">
+                    <div class="hc-wrapper">
                         <div class="hc-card">
                             <picture>
-                                <source srcset="/img/logos/fizzbuzz_600.jpg" media="(min-width: 991.98px)" />
-                                <img src="img/logos/fizzbuzz_200.jpg">
+                                <source srcset="/img/logos/superdog_600.jpg" media="(min-width: 991.98px)" />
+                                <img src="img/logos/superdog_200.jpg">
                             </picture>
                             <div class="hc-content">
                                 <p>
-                                    The class interview question with a twist. What if fizz buzz was an app?
+                                    Superdog displays event data and stats. Makes great use of local
+                                    storage.
                                 </p>
                                 <a type="button" class="btn btn-primary" target="_blank"
                                     href="https://superdogevents.coderfoundry.com">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <!--notary card-->
-                    <div class="col d-flex justify-content-center justify-content-md-end">
-                        <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source srcset="/img/logos/notary_600.jpg" media="(min-width: 991.98px)" />
-                                    <img src="img/logos/notary_200.jpg">
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        Notary is reads a book and produces stats. A unique project built with
-                                        Javascript.
-                                    </p>
-                                    <a type="button" class="btn btn-primary" target="_blank"
-                                        href="https://superdogevents.coderfoundry.com">Learn More</a>
-                                </div>
+                </div>
+
+                <!--Fizz Buzz card-->
+                <div class="col d-flex justify-content-center">
+                    <div class="hc-card">
+                        <picture>
+                            <source srcset="/img/logos/fizzbuzz_600.jpg" media="(min-width: 991.98px)" />
+                            <img src="img/logos/fizzbuzz_200.jpg">
+                        </picture>
+                        <div class="hc-content">
+                            <p>
+                                The class interview question with a twist. What if fizz buzz was an app?
+                            </p>
+                            <a type="button" class="btn btn-primary" target="_blank"
+                                href="https://superdogevents.coderfoundry.com">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!--notary card-->
+                <div class="col d-flex justify-content-center justify-content-md-end">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/notary_600.jpg" media="(min-width: 991.98px)" />
+                                <img src="img/logos/notary_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    Notary is reads a book and produces stats. A unique project built with
+                                    Javascript.
+                                </p>
+                                <a type="button" class="btn btn-primary" target="_blank"
+                                    href="https://superdogevents.coderfoundry.com">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-cta container-xxl d-flex align-items-center justify-content-center " id="cta">
+        <section class="section-cta d-flex align-items-center justify-content-center " id="cta">
             <a href="#projects" class="cta-arrow"><i class="bi bi-arrow-right-square-fill "></i></a>
             <span class="px-3">Want to learn how to build this?<br>Check out <a class="linkstyle"
                     href="https://learn.coderfoundry.com">Learn.CoderFoundry.com</a></span><a href="#projects"
                 class="cta-arrow"><i class="bi bi-arrow-left-square-fill"></i></a>
         </section>
-        <section class="section-page container-xxl" id="blog">
-            <div class="container">
-                <h1>Stuff I Write About</h1>
-                <p>I try to write on my blog on a regular basis. I think it is important to share your knowledge with
-                    others.</p>
-                <div class="d-flex flex-column align-items-center align-items-md-start">
-                    <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-md-4 blog-header">
-                                <a class="blog-image-link" href="#">
-                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="...">
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
-                                    <p class="card-text blog-body line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We will
-                                        revalue our aptitude to empower without depreciating our capability to implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div class="text-start">
-                                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                                    </div>
-                                    <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
-                                </div>
+        <section class="section-page" id="blog">
+            <h1>Stuff I Write About</h1>
+            <p>I try to write on my blog on a regular basis. I think it is important to share your knowledge with
+                others.</p>
+            <div class="d-flex flex-column align-items-center align-items-md-start">
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="...">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
                             </div>
                         </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-md-4 blog-header">
-                                <a class="blog-image-link" href="#">
-                                    <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="...">
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">12</div>
-                                    <div class="blog-month">FEBUARY</div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text blog-body line-clamp">
+                                    We apply the proverb 'Look before you leap' not only to our content but our
+                                    power to repurpose. A company that can synthesize courageously will (eventually)
+                                    be able to transition easily. Imagine a combination of HTTP and AJAX. We will
+                                    revalue our aptitude to empower without depreciating our capability to implement
+                                    wirelessly leads to the capacity to synthesize interactively. Without niches,
+                                    you will lack architectures. Spriti introduced new capabilities to the awards
+                                    page of the customer journey.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
                                 </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">The Power of CSS</h2>
-                                    <p class="card-text blog-body line-clamp">The copy warned the Little Blind Text,
-                                        that
-                                        where it came from it would have been rewritten a thousand times and everything
-                                        that
-                                        was left from its origin would be the word "and" and the Little Blind Text
-                                        should
-                                        turn around and return to its own, safe country. But nothing the copy said could
-                                        convince her and so it didn’t take long until a few insidious Copy Writers
-                                        ambushed
-                                        her, made her drunk with Longe and Parole and dragged her into their agency,
-                                        where
-                                        they abused her for their projects again and again. And if she hasn’t been
-                                        rewritten, then they are still using her.</p>
-                                    <div class="text-start">
-                                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                                    </div>
-                                    <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
-                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
                             </div>
                         </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-md-4 blog-header">
-                                <a class="blog-image-link" href="#">
-                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="...">
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">13</div>
-                                    <div class="blog-month">MARCH</div>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">Storing Images in a DB</h2>
-                                    <p class="card-text blog-body line-clamp">Even the all-powerful Pointing has no
-                                        control
-                                        about the blind texts it is an almost unorthographic life One day however a
-                                        small
-                                        line of blind text by the name of Lorem Ipsum decided to leave for the far World
-                                        of
-                                        Grammar. The Big Oxmox advised her not to do so, because there were thousands of
-                                        bad
-                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-                                        didn’t
-                                        listen. She packed her seven versalia, put her initial into the belt and made
-                                        herself on the way.</p>
-                                    <div class="text-start">
-                                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                                    </div>
-                                    <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
-                                </div>
+                    </div>
+                </article>
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="...">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">12</div>
+                                <div class="blog-month">FEBUARY</div>
                             </div>
                         </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-md-4 blog-header">
-                                <a class="blog-image-link" href="#">
-                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="...">
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">21</div>
-                                    <div class="blog-month">APRIL</div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">The Power of CSS</h2>
+                                <p class="card-text blog-body line-clamp">The copy warned the Little Blind Text,
+                                    that
+                                    where it came from it would have been rewritten a thousand times and everything
+                                    that
+                                    was left from its origin would be the word "and" and the Little Blind Text
+                                    should
+                                    turn around and return to its own, safe country. But nothing the copy said could
+                                    convince her and so it didn’t take long until a few insidious Copy Writers
+                                    ambushed
+                                    her, made her drunk with Longe and Parole and dragged her into their agency,
+                                    where
+                                    they abused her for their projects again and again. And if she hasn’t been
+                                    rewritten, then they are still using her.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
                                 </div>
-                            </div>
-                            <div class="col-md-8 blog-body">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">SPA vs MPA frameworks</h2>
-                                    <p class="card-text blog-body line-clamp">One morning, when Gregor Samsa woke from
-                                        troubled dreams, he found himself transformed in his bed into a horrible vermin.
-                                        He
-                                        lay on his armour-like back, and if he lifted his head a little he could see his
-                                        brown belly, slightly domed and divided by arches into stiff sections. The
-                                        bedding
-                                        was hardly able to cover it and seemed ready to slide off any moment. His many
-                                        legs,
-                                        pitifully thin compared with the size of the rest of him, waved about helplessly
-                                        as
-                                        he looked.</p>
-                                    <div class="text-start">
-                                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                                    </div>
-                                    <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
-                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
                             </div>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="...">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">13</div>
+                                <div class="blog-month">MARCH</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">Storing Images in a DB</h2>
+                                <p class="card-text blog-body line-clamp">Even the all-powerful Pointing has no
+                                    control
+                                    about the blind texts it is an almost unorthographic life One day however a
+                                    small
+                                    line of blind text by the name of Lorem Ipsum decided to leave for the far World
+                                    of
+                                    Grammar. The Big Oxmox advised her not to do so, because there were thousands of
+                                    bad
+                                    Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+                                    didn’t
+                                    listen. She packed her seven versalia, put her initial into the belt and made
+                                    herself on the way.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="...">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">21</div>
+                                <div class="blog-month">APRIL</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 blog-body">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">SPA vs MPA frameworks</h2>
+                                <p class="card-text blog-body line-clamp">One morning, when Gregor Samsa woke from
+                                    troubled dreams, he found himself transformed in his bed into a horrible vermin.
+                                    He
+                                    lay on his armour-like back, and if he lifted his head a little he could see his
+                                    brown belly, slightly domed and divided by arches into stiff sections. The
+                                    bedding
+                                    was hardly able to cover it and seemed ready to slide off any moment. His many
+                                    legs,
+                                    pitifully thin compared with the size of the rest of him, waved about helplessly
+                                    as
+                                    he looked.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
-        <section class="section-page pb-5 container-xxl " id="contact">
-            <div class="container">
-                <h1>Let's Chat</h1>
-                <form action="#">
-                    <div class="row mb-1">
-                        <div class="col">
-                            <label class="form-label">First Name</label>
-                            <input type="text" name="firstName" class="form-control" placeholder="First name"
-                                aria-label="First name" required>
-                        </div>
-                        <div class="col">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" name="lastName" class="form-control" placeholder="Last name"
-                                aria-label="Last name" required>
-                        </div>
+        <section class="section-page" id="contact">
+            <h1>Let's Chat</h1>
+            <form action="#">
+                <div class="row mb-1">
+                    <div class="col">
+                        <label class="form-label">First Name</label>
+                        <input type="text" name="firstName" class="form-control" placeholder="First name"
+                            aria-label="First name" required>
                     </div>
-                    <div class="row mb-1">
-                        <div class="col">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email"
-                                required>
-                        </div>
-                        <div class="col">
-                            <label class="form-label">Phone (optional)</label>
-                            <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
-                        </div>
+                    <div class="col">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" name="lastName" class="form-control" placeholder="Last name"
+                            aria-label="Last name" required>
                     </div>
-                    <div class="row mb-1">
-                        <div class="col">
-                            <label class="form-label">Subject</label>
-                            <input type="text" name="subject" class="form-control" placeholder="Subject"
-                                aria-label="Subject" required>
-                        </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email"
+                            required>
                     </div>
-                    <div class="row mb-1">
-                        <div class="col">
-                            <label class="form-label">Message</label>
-                            <textarea type="text" rows=4 name="message" class="form-control" placeholder="Message"
-                                aria-label="Message" required></textarea>
-                        </div>
+                    <div class="col">
+                        <label class="form-label">Phone (optional)</label>
+                        <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
-                </form>
-            </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col">
+                        <label class="form-label">Subject</label>
+                        <input type="text" name="subject" class="form-control" placeholder="Subject"
+                            aria-label="Subject" required>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col">
+                        <label class="form-label">Message</label>
+                        <textarea type="text" rows=4 name="message" class="form-control" placeholder="Message"
+                            aria-label="Message" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </form>
         </section>
     </main>
     <!---footer-->
@@ -623,6 +611,7 @@
             </div>
         </div>
     </footer>
+
 
     <!--Modals-->
     <!--Project One Modal-->
@@ -702,7 +691,7 @@
                                         <p>
                                             The system was built with C# and .Net in 3 weeks. The
                                             front end was developed with HTML, Javascript and
-                                            Bootstrap. The backend utlizies MVC and C#. The database
+                                            Bootstrap. The back-end utlizies MVC and C#. The database
                                             was built with SQL Server and hosted on Azure. Please
                                             visit the site and try it out.
                                         </p>
@@ -807,7 +796,7 @@
                                         <p>
                                             The system was built with C# and .Net in 3 weeks. The
                                             front end was developed with HTML, Javascript and
-                                            Bootstrap. The backend utlizies MVC and C#. The database
+                                            Bootstrap. The back-end utlizies MVC and C#. The database
                                             was built with Postgres and hosted on Heroku. Please
                                             visit the site and try it out.
                                         </p>
@@ -910,7 +899,7 @@
                                         <p>
                                             The system was built with C# and .Net in 3 weeks. The
                                             front end was developed with HTML, Javascript and
-                                            Bootstrap. The backend utlizies MVC and C#. The database
+                                            Bootstrap. The back-end utlizies MVC and C#. The database
                                             was built with Postgres and hosted on Heroku. Please
                                             visit the site and try it out.
                                         </p>

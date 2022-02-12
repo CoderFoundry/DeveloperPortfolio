@@ -43,19 +43,26 @@ body {
     overflow-x: hidden;
 }
 
-.linkstyle {
-    color: var(--cf-secondary-color);
-    text-decoration: none;
+/*--- sticky footer and page layout --- */
+header{
+    padding-top: 74px;
 }
 
-.linkstyle:hover {
-    color: var(--cf-secondary-color);
-    filter: saturate(2);
-    text-decoration: underline;
+main {
+    flex: 1 0 auto;
 }
+
+footer {
+    flex-shrink: 0;
+}
+
+
 
 /*------ELEMENT OVERRIDES ----- */
-
+section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 
 h6,
@@ -123,19 +130,16 @@ h1,
     outline: 0 none;
 }
 
-/*--- sticky footer--- */
-header {
-    flex-shrink: 0;
+.linkstyle {
+    color: var(--cf-secondary-color);
+    text-decoration: none;
 }
 
-main {
-    flex: 1 0 auto;
+.linkstyle:hover {
+    color: var(--cf-secondary-color);
+    filter: saturate(2);
+    text-decoration: underline;
 }
-
-footer {
-    margin-top: auto;
-}
-
 
 /*--- nav bar overrides ---*/
 /*--- set the back ground color of the navbar ---*/
@@ -148,7 +152,7 @@ footer {
 }
 
 .navbar-toggler {
-    color: var(--cf-nav-toggler-glow);
+    color: var(--cf-nav-toggler-glow) !important;
 }
 
 .navbar-toggler-icon-cf {
@@ -166,27 +170,7 @@ footer {
     font-family: var(--title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--cf-dark-color);
-}
-
-/*--- default style for the header image media queries set the image at breakpoints---*/
-.mainHeader {
-    padding-top: calc(.2em + 74px);
-    background-image: url(/img/DevPortFolioBG_375.png);
-    height: 224px;
-    background-repeat: no-repeat;
-    background-position: right top 74px;
-    background-color: var(--cf-light-color);
-}
-
-.mainHeader-cover {
-    padding-top: calc(.2em + 74px);
-    background-image: url(/img/cityBG_2560.png);
-    height: 224px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-color: var(--cf-light-color);
+    color: var(--cf-light-color);
 }
 
 /* sizing the logo for the header */
@@ -201,7 +185,35 @@ footer {
     line-height: 1rem;
     font-weight: 300;
     letter-spacing: .09rem;
-    color: var(--cf-dark-color);
+    color: var(--cf-light-color);
+}
+
+/*--- default style for the header image media queries set the image at breakpoints---*/
+.mainHeader {   
+    background-image: url(/img/DevPortFolioBG_576.png);
+    height: 274px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--cf-light-color);
+}
+
+.mainHeader-cover {
+   
+    background-image: url(/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    min-height: 300px;
+    max-height: 500PX;
+    width:100%;
+    background-position: top left;
+    background-size: cover;
+    overflow: hidden;
+  
+}
+
+
+.mainHeader-cover  .mainHeader-content{
+    backdrop-filter: blur(0px) brightness(80%) hue-rotate(120deg);
+    
 }
 
 .profilePic {
@@ -215,6 +227,7 @@ footer {
 .section-page {
     padding-top: 5em;
     padding-bottom: 6rem;
+   
 }
 
 .section-page:nth-child(even) {
@@ -240,7 +253,7 @@ footer {
 .section-cta {
     background-color: var(--cf-dark-color);
     color: var(--cf-light-color);
-    padding: 1.5rem;
+   
     line-height: 1.2rem;
     font-size: 1rem;
     text-align: center;
@@ -272,7 +285,7 @@ footer {
 .footer-cta {
     border-radius: 10px;
     background-color: var(--cf-secondary-color);
-    width: 75%;
+    width: 75%;   
 }
 
 .footer-message {
@@ -314,34 +327,23 @@ footer {
 *----/
 
 /*---------MEDIA QUERIES -----------*/
-@media  (min-width: 374.98x){
-    .mainHeader {
-        background-image: url(/img/DevPortFolioBG_576.png);
-        height: 274px;
-    }
-}
+
 
 /* small devices (landscape phones 576px and up) */
 @media (min-width: 575.98px) {
 
     .mainHeader {
-        background-image: url(/img/DevPortFolioBG_768.png);
+        background-image: url(/img/DevPortFolioBG_767.png);
         height: 274px;
     }
 
-    .mainHeader-cover {
-        height: 274px;
-    }
+
 
 }
 
 @media (min-width: 767.98px) {
     .mainHeader {
         background-image: url(/img/DevPortFolioBG_992.png);
-        height: 374px;
-    }
-
-    .mainHeader-cover {
         height: 374px;
     }
 
@@ -368,7 +370,6 @@ footer {
     }
 
     .section-cta {
-        padding: 1.5rem;
         line-height: 1.7rem;
         font-size: 1.5rem;
         text-align: center;
@@ -387,9 +388,7 @@ footer {
         height: 474px;
     }
 
-    .mainHeader-cover {
-        height: 474px;
-    }
+
 }
 
 @media(min-width:1199.98px) {
@@ -397,10 +396,7 @@ footer {
         background-image: url(/img/DevPortFolioBG_2560.png);
         height: 574px;
     }
-
-    .mainHeader-cover {
-        height: 574px;
-    }
+   
 
     /* styling the main title */
     .mainTitle {
@@ -422,7 +418,7 @@ footer {
     }
 
     .section-cta {
-        padding: 1.5rem;
+        
         line-height: 2.7rem;
         font-size: 2.5rem;
         text-align: center;
@@ -441,7 +437,5 @@ footer {
         height: 574px;
     }
 
-    .mainHeader-cover {
-        height: 574px;
-    }
+
 }
