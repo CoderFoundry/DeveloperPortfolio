@@ -184,11 +184,21 @@ h1,
     background-position: top left;
     background-size: cover;
     overflow: hidden;
+
 }
 
+/* tint and bluer the background for fir fox*/
 .mainHeader-cover>.mainHeader-content {
+
     backdrop-filter: blur(3px) hue-rotate(0deg) brightness(90%) contrast(150%) saturate(150%);
     -webkit-backdrop-filter: blur(3px) hue-rotate(10deg) brightness(110%) contrast(150%) saturate(150%);
+}
+
+/* better blur and tint control with filters note firefox does not support out of the box */
+@supports not (backdrop-filter:blur(3px)) {
+    .mainHeader-cover>.mainHeader-content {
+        background-color: rgba(0, 37, 46, 0.6);
+    }
 }
 
 .mainHeader-wrapper {
