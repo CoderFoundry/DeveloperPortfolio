@@ -165,6 +165,35 @@ h1,
 }
 
 
+/*--- default style for the header image media queries set the image at breakpoints---*/
+.mainHeader {
+    background-image: url(/img/DevPortFolioBG_576.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--cf-light-color);
+}
+
+.mainHeader-cover {
+    background-image: url(/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    min-height: 200px;
+    max-height: 500PX;
+    width: 100%; 
+    height: 100%;   
+    background-position: top left;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mainHeader-cover>.mainHeader-content {
+    backdrop-filter: blur(1px) hue-rotate(10deg) brightness(110%) contrast(150%) saturate(150%);
+}
+
+.mainHeader-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 /*-----Main Header Styles -----*/
 /* styling the main title */
@@ -172,7 +201,7 @@ h1,
     font-family: var(--title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--cf-dark-color);
+    color: var(--cf-light-color);
 }
 
 /* sizing the logo for the header */
@@ -187,38 +216,8 @@ h1,
     line-height: 1rem;
     font-weight: 300;
     letter-spacing: .09rem;
-    color: var(--cf-dark-color);
+    color: var(--cf-light-color);
 }
-
-/*--- default style for the header image media queries set the image at breakpoints---*/
-.mainHeader {
-    background-image: url(/img/DevPortFolioBG_576.png);
-    height: 200px;
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-color: var(--cf-light-color);
-}
-
-.mainHeader-cover {
-    background-image: url(/img/cityBG_2560.png);
-    background-repeat: no-repeat;
-    min-height: 300px;
-    max-height: 500PX;
-    width: 100%;
-    background-position: top left;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.mainHeader-cover>.mainHeader-content {
-    backdrop-filter: blur(0px) brightness(80%) hue-rotate(120deg);
-}
-
-.mainHeader-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
 
 
 .profilePic {
@@ -249,7 +248,7 @@ h1,
 
 /* set the height and color of the contact form*/
 .section-page:last-child {
-   background-color: var(--cf-light-color);
+    background-color: var(--cf-light-color);
 }
 
 /* set the styles for the cta sections*/
@@ -351,6 +350,10 @@ h1,
         height: 300px;
     }
 
+    .mainHeader-cover {
+        min-height: 300px;
+    }
+
     .footer-cta {
         width: 75%;
     }
@@ -401,6 +404,9 @@ h1,
         height: 500px;
     }
 
+    .mainHeader-cover {
+        min-height: 500px;
+    }
 
     /* styling the main title */
     .mainTitle {
