@@ -193,7 +193,7 @@ h1,
 /*--- default style for the header image media queries set the image at breakpoints---*/
 .mainHeader {   
     background-image: url(/img/DevPortFolioBG_576.png);
-    height: 274px;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--cf-light-color);
@@ -340,7 +340,7 @@ h1,
 
     .mainHeader {
         background-image: url(/img/DevPortFolioBG_767.png);
-        height: 274px;
+        height: 200px;
     }
 
 
@@ -350,7 +350,7 @@ h1,
 @media (min-width: 767.98px) {
     .mainHeader {
         background-image: url(/img/DevPortFolioBG_992.png);
-        height: 374px;
+        height: 300px;
     }
 
     .footer-cta {
@@ -391,7 +391,7 @@ h1,
 @media (min-width: 991.98px) {
     .mainHeader {
         background-image: url(/img/DevPortFolioBG_1200.png);
-        height: 474px;
+        height: 400px;
     }
 
 
@@ -400,7 +400,7 @@ h1,
 @media(min-width:1199.98px) {
     .mainHeader {
         background-image: url(/img/DevPortFolioBG_2560.png);
-        height: 574px;
+        height: 500px;
     }
    
 
