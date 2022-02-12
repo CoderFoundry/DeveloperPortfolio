@@ -31,6 +31,10 @@ body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
     font-family: var(--cf-body-font);
     font-size: var(--cf-font-size);
     font-weight: var(--cf-font-weight);
@@ -38,9 +42,7 @@ body {
     color: var(--cf-dark-color);
     background: var(--cf-background-color);
     --webkit-text-size-adjust: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+    
 }
 
 /*--- sticky footer and page layout --- */
