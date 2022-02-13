@@ -212,7 +212,7 @@ h1,
     font-family: var(--title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--cf-light-color);
+    color: var(--cf-dark-color);
 }
 
 /* sizing the logo for the header */
@@ -227,7 +227,7 @@ h1,
     line-height: 1rem;
     font-weight: 300;
     letter-spacing: .09rem;
-    color: var(--cf-light-color);
+    color: var(--cf-dark-color);
 }
 
 
