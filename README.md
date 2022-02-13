@@ -1,2 +1,2 @@
 # DaneWhitmanPortfolio
- Portfolio for Dane Whitman
+ Developer Portfolio template built by Coder Foundry 
