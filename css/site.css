@@ -177,19 +177,16 @@ h1,
 .mainHeader-cover {
     background-image: url(/img/cityBG_2560.png);
     background-repeat: no-repeat;
-    min-height: 200px;
-    max-height: 500PX;
+    min-height: 200px;  
     width: 100%;
     height: 100%;
     background-position: top left;
     background-size: cover;
     overflow: hidden;
-
 }
 
 /* tint and blur the background with filters*/
 .mainHeader-cover>.mainHeader-content {
-
     backdrop-filter: blur(3px) hue-rotate(0deg) brightness(90%) contrast(150%) saturate(150%);
     -webkit-backdrop-filter: blur(3px) hue-rotate(10deg) brightness(110%) contrast(150%) saturate(150%);
 }
@@ -217,7 +214,7 @@ h1,
 
 /* sizing the logo for the header */
 .mainLogo {
-    height: 2.0rem;
+    height: .6em;
 }
 
 /*----- sub title styling -----*/
@@ -240,7 +237,7 @@ h1,
 
 /*-----Section Styles------*/
 .section-page {
-    padding-top: 5em;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
