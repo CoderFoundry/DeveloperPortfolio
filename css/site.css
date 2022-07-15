@@ -47,7 +47,7 @@ body {
 
 /*--- sticky footer and page layout --- */
 header {
-    padding-top: 74px;
+    margin-top: 74px;
 }
 
 main {

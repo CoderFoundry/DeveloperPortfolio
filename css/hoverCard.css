@@ -1,15 +1,15 @@
 /*--------------------- 
-Hover card images are 400px x 400px.  
-Make all the hover cards the same size if using in a group
+Hover card images are 300px x 300px or 225px x 225px.  
+Make all the hover cards the same size if using in a group. 
+Make sure image is large enough so that they don't have to stretch.
 for the default hc-card class set the width and height to the 
 same aspect ratio at all break points for best results. 
 *Note: this was built with square cards in mind.
 ---------------------*/
 
 .hc-wrapper {
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
+    display: flex;    
+    justify-content: center;
 }
 
 .hc-card {
@@ -23,19 +23,6 @@ same aspect ratio at all break points for best results.
     align-items: flex-end;
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-}
-
-.hc-card:hover {
-    transform: translateY(20px);
-}
-
-.hc-card:hover:before {
-    opacity: 1;
-}
-
-.hc-card:hover .hc-content {
-    opacity: 1;
-    transform: translateY(0px);
 }
 
 .hc-card:before {
@@ -53,6 +40,20 @@ same aspect ratio at all break points for best results.
     opacity: 0;
 }
 
+
+.hc-card:hover {
+    transform: translateY(20px);
+}
+
+.hc-card:hover:before {
+    opacity: 1;
+}
+
+.hc-card:hover .hc-content {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 .hc-card img {
     width: 100%;
     height: 100%;
@@ -66,7 +67,6 @@ same aspect ratio at all break points for best results.
 
 .hc-card .hc-content {
     position: relative;
-    top: 2px;
     z-index: 3;
     color: white;
     opacity: 0;
@@ -74,15 +74,10 @@ same aspect ratio at all break points for best results.
     transition: 0.5s;
 }
 
-.hc-card .hc-content h1 {
-    margin: 0px;
-    color: white;
-}
-
 .hc-card .hc-content p {
     letter-spacing: 1px;
-    font-size: 15px;
-    margin-top: 8px;
+    font-size: .9rem;
+    margin-top: .5em;
 }
 
 .hc-card .hc-content button {
@@ -102,12 +97,6 @@ same aspect ratio at all break points for best results.
     color: white;
 }
 
-@media(min-width: 767.98px){
-    .hc-card {
-        width: 200px;
-        height: 200px;
-    }
-}
 
 @media(min-width:1199.98px) {
     .hc-card {
