@@ -1,45 +1,14 @@
-function getData() {
-  let blogs = [];
-
-  let article1 = {
-    title: "The power of css",
-    content:
-      "One morning, when Gregor Samsa woke from  troubled dreams, he found himself transformed in his bed into a horrible vermin. He    lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding",
-    imageData: "",
-    imageType: "",
-    day: 11,
-    month: "Febuary",
-    link: "https://google.com",
-    publishedDate: "1/1/2022",
-  };
-
-  let article2 = {
-    title: "The power of css",
-    content:
-      "One morning, when Gregor Samsa woke from  troubled dreams, he found himself transformed in his bed into a horrible vermin. He    lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding",
-    imageData: "",
-    imageType: "",
-    day: 11,
-    month: "Febuary",
-    link: "https://google.com",
-    publishedDate: "1/1/2022",
-  };
-
-  blogs[0] = article1;
-  blogs[1] = article1;
-
-  return blogs;
-}
-
 function fetchBlogData() {
-  fetch("https://cf-blog-net6.herokuapp.com/api/BlogPosts?num=3")
+  const baseURL = "https://cf-blog-net6.herokuapp.com/"
+  
+    fetch(`${baseURL}api/BlogPosts?num=3`)
     .then((response) => response.json())
     .then(function (data) {
-      displayBlog(data);
+      displayBlog(data, baseURL);
     });
 }
 
-function displayBlog(data) {
+function displayBlog(data, baseURL) {
   //blogs = getData();
 
   let template = document.getElementById("blog-template");
@@ -47,16 +16,13 @@ function displayBlog(data) {
   /* 
   "title": "string",
   "slug": "string",
-  "categoryId": 0,
   "abstract": "string",
   "content": "string",
   "created": "2022-08-24",
-  "updated": "2022-08-24",
-  "isPublished": true,
-  "isDeleted": true,
+  "updated": "2022-08-24",  
   "imageData": "string",
   "imageType": "string",
-  "blogPostImage": "string", */
+  */
 
   data.forEach((article) => {
     const articleCard = document.importNode(template.content, true);
