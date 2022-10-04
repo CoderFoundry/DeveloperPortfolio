@@ -108,7 +108,7 @@ h1,
 
 .btn-primary:hover {
     filter: brightness(1.1) !important;
-    border-color: var(--cf-highlight-color);
+    border-color: var(--cf-highlight-color) !important;
 }
 
 .btn-primary:active,
