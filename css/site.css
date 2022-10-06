@@ -11,6 +11,7 @@
     --cf-light-color: rgb(222, 238, 251);
     --cf-background-color: rgba(250, 250, 250, .8);
 
+    --cf-nav-bg-color:  rgb(33, 33, 33,.8);
     --cf-nav-toggler-glow: rgba(250, 225, 120, .55);
     --cf-nav-togger-color: var(--cf-highlight-color);
 

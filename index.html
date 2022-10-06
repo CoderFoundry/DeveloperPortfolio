@@ -186,10 +186,8 @@
                         CSS framework. Many shy away from front-end I embrace it.</p>
                 </div>
                 <div class="col">
-                    <i class="devicon-android-plain-wordmark colored devicons"></i><i
-                        class="devicon-apple-original colored devicons"></i>
-                    <p class="card-text">I use cross platform frameworks to create mobile applications. Flutter and
-                        Xamarin are my tools of choice.</p>
+                    <i class="devicon-git-plain colored devicons"></i><i class="devicon-github-original-wordmark devicons"></i>
+                    <p class="card-text">I use git and github for all my projects. Git is the most used source control framework on the planet. I also employ CI/CD for publishing.</p>
                 </div>
                 <div class="col">
                     <i class="devicon-postgresql-plain-wordmark colored devicons"></i>
@@ -552,43 +550,38 @@
         </section>
         <section class="section-page" id="contact">
             <h1>Let's Chat</h1>
-            <form action="#">
+            <form name="contact" method="POST" data-netlify="true">
                 <div class="row mb-1">
-                    <div class="col">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">First Name</label>
                         <input type="text" name="firstName" class="form-control" placeholder="First name"
                             aria-label="First name" required>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Last Name</label>
                         <input type="text" name="lastName" class="form-control" placeholder="Last name"
                             aria-label="Last name" required>
                     </div>
-                </div>
-                <div class="row mb-1">
-                    <div class="col">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Email</label>
                         <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email"
                             required>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Phone (optional)</label>
                         <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
                     </div>
-                </div>
-                <div class="row mb-1">
-                    <div class="col">
+                             
+                 <div class="col-12 col-md-6">
                         <label class="form-label">Subject</label>
                         <input type="text" name="subject" class="form-control" placeholder="Subject"
                             aria-label="Subject" required>
-                    </div>
-                </div>
-                <div class="row mb-1">
-                    <div class="col">
+                 </div>                
+                  <div class="col-12 col-md-6">
                         <label class="form-label">Message</label>
                         <textarea type="text" rows=4 name="message" class="form-control" placeholder="Message"
                             aria-label="Message" required></textarea>
-                    </div>
+                  </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-2">Submit</button>
             </form>
