@@ -1,11 +1,11 @@
 function fetchBlogData() {
-  const baseURL = "https://cf-blog-net6.herokuapp.com/"
+  const baseURL = "https://cf-blog-net6.herokuapp.com/";
   
     fetch(`${baseURL}api/BlogPosts?num=3`)
-    .then((response) => response.json())
-    .then(function (data) {
-      displayBlog(data, baseURL);
-    });
+      .then((response) => response.json())
+      .then(function (data) {
+        displayBlog(data, baseURL);
+      });
 }
 
 function displayBlog(data, baseURL) {
